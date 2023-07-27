@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.road {
+  width: 40rem;
+  height: 100vh;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.startScreen {
+  position: absolute;
+  z-index: 1;
+  width: 40rem;
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+  background-color: bisque;
+  padding: 2rem;
+}
+.score {
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  background-color: antiquewhite;
+}
+
+.hide {
+  display: none;
+}
+
+.line1 {
+  position: absolute;
+  width: 0.625rem;
+  height: 6.25rem;
+  background: white;
+  top: 0;
+  left: 32%;
+}
+
+.line2 {
+  position: absolute;
+  width: 0.625rem;
+  height: 6.25rem;
+  background: white;
+  top: 0;
+  left: 67%;
+}
+
+.car {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 3.125rem;
+  height: 6.25rem;
+  background-image: url("car.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.obstacle {
+  position: absolute;
+  width: 3.125rem;
+  height: 6.25rem;
+}
